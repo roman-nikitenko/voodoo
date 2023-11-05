@@ -63,7 +63,6 @@ function changeAmount(prodId, direction) {
 }
 
 function renderCart() {
-  const totalSpan = document.createElement('span');
   let total = 0;
   cartBox.innerHTML = '';
 
@@ -89,7 +88,7 @@ function renderCart() {
         </div>  
         
         <button class="text-white absolute top-0 right-0" onclick="changeAmount(${productId}, 'delete')">
-        <img src="../assets/delete.svg">
+        <img src="/assets/delete.svg">
         </button>
       </div>
   </div>
